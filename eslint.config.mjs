@@ -13,6 +13,9 @@ const compat = new FlatCompat({
 })
 
 export default [
+  {
+    ignores: ["app/javascript/controllers/index.js"]
+  },
   ...compat.extends("standard"),
   {
     languageOptions: {
